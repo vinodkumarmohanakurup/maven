@@ -1,7 +1,8 @@
 pipeline {
    
-       agent any
-       
+   agent {
+       label "java"
+   }
     stages {
         stage('SCM') {
             steps {
